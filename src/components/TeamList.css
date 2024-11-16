@@ -1,0 +1,96 @@
+/* Main container for the TeamList */
+.team-list-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-list-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  .team-list-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* List of teams */
+  .team-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .team-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  .team-info {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Delete button */
+  .delete-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .delete-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .team-list-container {
+      padding: 20px;
+    }
+  
+    .team-list-heading {
+      font-size: 20px;
+    }
+  
+    .team-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .delete-button {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  

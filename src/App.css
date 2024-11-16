@@ -1,0 +1,51 @@
+/* Main container for the page */
+div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Styling for the AddTeam and TeamList sections */
+.add-team-container, .team-list-container {
+  margin-bottom: 40px;
+}
+
+/* Add spacing between the AddTeam and TeamList sections */
+.add-team-container {
+  margin-bottom: 30px;
+}
+
+/* AddTeam Form and Team List Layout - Flexbox for responsive design */
+.add-team-container,
+.team-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .add-team-container,
+  .team-list-container {
+    padding: 15px;
+  }
+}
